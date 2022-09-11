@@ -68,9 +68,11 @@ body {
 /* Banner Secton End  */
 
 .card-parent {
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px
+    grid-row-gap: 20px;
+    margin: auto;
 }
 
 .card {
@@ -80,6 +82,10 @@ body {
     padding: 10px;
     border-radius: 7px;
 }
+
+/* .card img {
+    height: 100px;
+} */
 
 .card-title {
     margin: 10px 0;
