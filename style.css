@@ -14,6 +14,28 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    right: 180px;
+    animation: circle 1s linear infinite;
+}
+
+@keyframes circle {
+    0% {
+        top: -10px;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: -10px;
+    }
 }
 
 .banner-left {
@@ -32,10 +54,11 @@ body {
 
 .banner-right img {
     width: 400px;
+
 }
 
 .primary-btn {
-    padding: 6px 13px;
+    padding: 10px 20px;
     background-color: #d20475;
     color: white;
     border: none;
@@ -43,3 +66,60 @@ body {
 }
 
 /* Banner Secton End  */
+
+.card-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px
+}
+
+.card {
+    width: 300px;
+    box-shadow: 10px 5px 20px rgba(128, 128, 128, 0.442);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.card-title {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.card-price {
+    font-size: 25px;
+    font-weight: 400;
+    color: goldenrod;
+}
+
+.start {
+    width: 15px;
+    margin: 10px 0;
+    color: white;
+}
+
+.seemore {
+    position: absolute;
+    left: 80%;
+    margin: 20px 25px;
+    margin-bottom: 20px;
+}
+
+.see-more {
+    background-color: none;
+    color: #ff008e;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer {
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+}
